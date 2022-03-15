@@ -30,3 +30,4 @@ function extractYears(text) {
   }
   return arr;
 }
+extractYears(`1995, 2020, 2012, 1900, 2099`);

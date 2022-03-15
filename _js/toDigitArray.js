@@ -17,3 +17,4 @@ function toDigitArray(N) {
   let strArray = str.split('').reverse();
   return strArray.map((string) => parseFloat(string));
 }
+toDigitArray(46156);

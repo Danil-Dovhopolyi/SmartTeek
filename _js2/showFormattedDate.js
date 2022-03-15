@@ -22,4 +22,4 @@ function showFormattedDate(date) {
     months[date.getMonth()]
   }, ${date.getFullYear()}`;
 }
-console.log(showFormattedDate(new Date('2018-08-27')));
+showFormattedDate(new Date('2018-08-27'));

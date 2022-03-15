@@ -30,3 +30,4 @@ function calculateRoundedRating(rating) {
     return Math.floor(rating);
   }
 }
+calculateRoundedRating(3.666);

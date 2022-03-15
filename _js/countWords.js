@@ -22,3 +22,4 @@ function countWords(text) {
   }
   return count;
 }
+countWords('   You  area programmer ');

@@ -5,13 +5,11 @@
  * @param {Object} secondObj - Объект с любыми значениями
  * @returns {boolean}
  */
-let isEqualDeep = (element) => {
-  for (let prop in object) {
-    console.log(prop);
-  }
+let isEqualDeep = (objectFirst, objectSecond) => {
+  return JSON.stringify(objectFirst) === JSON.stringify(objectSecond);
 };
 const data = { a: 1, b: { c: 1 } };
 const data2 = { a: 1, b: { c: 1 } };
 const data3 = { a: 1, b: { c: 2 } };
-console.log(isEqualDeep(data, data2)); // true
-console.log(isEqualDeep(data, data3)); // false
+isEqualDeep(data, data2); // true
+isEqualDeep(data, data3); // false

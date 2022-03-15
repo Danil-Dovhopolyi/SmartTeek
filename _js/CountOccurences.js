@@ -22,4 +22,4 @@
 function countOccurrences(str, substr) {
   return (str = str.split(substr).length - 1);
 }
-console.log(countOccurrences('azyxxzyzy', 'zy'));
+countOccurrences('azyxxzyzy', 'zy');

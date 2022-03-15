@@ -14,7 +14,7 @@ let map = (array, func) => {
   return result;
 };
 
-console.log(map([1, 2, 3], (x) => x * 2));
+map([1, 2, 3], (x) => x * 2);
 
 let filter = (array, func) => {
   let result = [];
@@ -27,4 +27,4 @@ let filter = (array, func) => {
   return result;
 };
 
-console.log(filter([2, 5, 1, 3, 8, 6], (x) => x > 3));
+filter([2, 5, 1, 3, 8, 6], (x) => x > 3);

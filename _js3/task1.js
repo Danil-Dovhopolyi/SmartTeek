@@ -17,5 +17,5 @@ let isEmpty = (object) => {
 
 const data = { a: 1, b: undefined };
 const data2 = { a: undefined };
-console.log(isEmpty(data)); // false
-console.log(isEmpty(data2)); // true
+isEmpty(data); // false
+isEmpty(data2); // true

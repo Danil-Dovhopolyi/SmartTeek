@@ -1,0 +1,15 @@
+.simplecalc {
+  &__row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    > button {
+      background-color: #c9c2c2;
+      border-radius: 10px;
+      color: #e06669;
+      border: none;
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.result {
+  background-color: #345b82;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 75%;
+
+  input {
+    background-color: inherit;
+    border: none;
+  }
+  &__answer {
+    display: flex;
+    align-self: end;
+  }
+
+  &__expression {
+    display: flex;
+    align-self: start;
+  }
+}

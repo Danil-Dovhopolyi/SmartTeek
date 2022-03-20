@@ -1,0 +1,21 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  height: 100vh;
+}
+.simplecalc__row button {
+  width: 50px;
+  height: 25px;
+}
+.container {
+  width: 300px;
+  height: 550px;
+  border-radius: 35px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: -1px 11px 47px -7px rgba(0, 0, 0, 0.87);
+  -webkit-box-shadow: -1px 11px 47px -7px rgba(0, 0, 0, 0.87);
+  -moz-box-shadow: -1px 11px 47px -7px rgba(0, 0, 0, 0.87);
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default function CurrencyRow(props) {
   const {
@@ -13,7 +13,7 @@ export default function CurrencyRow(props) {
       <input
         type="number"
         className="input"
-        value={amount}
+        value={amount.toString()}
         onChange={onChangeAmount}
       />
       <select value={selectedCurrency} onChange={onChangeCurrency}>

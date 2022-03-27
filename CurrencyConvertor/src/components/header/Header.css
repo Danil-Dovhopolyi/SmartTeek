@@ -1,0 +1,13 @@
+#header-text {
+  display: flex;
+  margin-top: 20px;
+  font-size: 30px;
+  margin-left: 5%;
+}
+
+hr {
+  color: #282941;
+  border-color: #282941;
+  height: 1px;
+  max-width: 90%;
+}

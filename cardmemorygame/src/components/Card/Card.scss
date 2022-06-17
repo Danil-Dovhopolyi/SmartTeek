@@ -1,0 +1,14 @@
+.game {
+  &__card {
+    width: 65%;
+    height: 70%;
+    margin: 0 auto;
+    align-self: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+  }
+  &__cardText {
+    text-align: center;
+    height: 100%;
+  }
+}

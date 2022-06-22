@@ -1,12 +1,13 @@
 import React from 'react';
 import './Card.scss';
 
-export default function Card() {
+export default function Card(props) {
+  console.log(Object.values(props));
   return (
-    <div className="game__card">
+    <button className="game__card">
       <div className="game__cardText">
-        <p>5</p>
+        <p>{Object.values(props)}</p>
       </div>
-    </div>
+    </button>
   );
 }

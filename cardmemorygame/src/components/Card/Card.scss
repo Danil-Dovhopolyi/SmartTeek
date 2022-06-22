@@ -6,9 +6,20 @@
     align-self: center;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: white;
   }
   &__cardText {
     text-align: center;
     height: 100%;
   }
+}
+
+.showCard {
+  opacity: 1;
+}
+
+.hideCard {
+  opacity: 0;
 }

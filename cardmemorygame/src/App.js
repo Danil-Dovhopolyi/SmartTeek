@@ -1,5 +1,9 @@
 import Card from './components/Card/Card';
 import './App.scss';
+import { getRandomValue } from './Helper/GenerateCardsAndValues';
+
+const createNumber = getRandomValue();
+const getShuffledArray = createNumber.sort(() => Math.random() - 0.5);
 
 function App() {
   return (
@@ -8,7 +12,9 @@ function App() {
         <h1>Mahjong-like game</h1>
       </div>
       <div className="game__cardList">
-        <Card />
+        {getShuffledArray.map((value) => (
+          <Card props={value} />
+        ))}
       </div>
     </div>
   );

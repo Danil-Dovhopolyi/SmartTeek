@@ -1,0 +1,44 @@
+.casino {
+  &__currencytable {
+    width: 30%;
+    height: 35%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  &__input {
+    width: 70%;
+    > fieldset {
+      border-style: solid;
+      border-color: lightgrey;
+      > legend {
+        font-size: 12px;
+        color: lightgrey;
+        text-transform: uppercase;
+        padding: 2%;
+      }
+      > input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        padding: 2%;
+      }
+    }
+  }
+  &__currencyaddbutton {
+    width: 70%;
+    > button {
+      width: 100%;
+      color: white;
+      padding: 4%;
+      background-color: tomato;
+      border: none;
+      border-radius: 20px;
+    }
+  }
+}

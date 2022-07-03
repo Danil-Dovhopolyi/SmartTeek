@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  background: url('./img/bg.png'), #2a0a4a;
+  background-position-x: 200%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.casino {
+  background: url('./img/figure.png');
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center;
+  height: 100%;
+  &__title {
+    height: 10%;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    height: 80%;
+    justify-content: space-between;
+  }
+  &__photo {
+    > img {
+      width: 40%;
+    }
+  }
+}

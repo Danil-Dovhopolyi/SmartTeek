@@ -2,9 +2,12 @@ import React, { useEffect, useState } from 'react';
 import './Card.scss';
 import CardNumber from './CardNumber';
 
-export default function Card({ props }) {
+export default function Card({ props, handleChoice }) {
   const [isVisible, setVisible] = useState(true);
 
+  const handleClick = () => {
+    handleChoice(props);
+  };
   useEffect(() => {
     setTimeout(() => {
       setVisible(false);
@@ -12,8 +15,10 @@ export default function Card({ props }) {
   });
 
   return (
-    <button className="game__card" onClick={() => setVisible(!isVisible)}>
-      {isVisible && <CardNumber number={props} />}
-    </button>
+    <div className="game__body" onClick={() => setVisible(true)}>
+      <button className="game__card" onClick={handleClick}>
+        {isVisible && <CardNumber number={props} />}
+      </button>
+    </div>
   );
 }

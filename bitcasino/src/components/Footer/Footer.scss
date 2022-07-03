@@ -1,0 +1,14 @@
+.casino {
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    height: 10%;
+    background-color: white;
+    color: darkgray;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

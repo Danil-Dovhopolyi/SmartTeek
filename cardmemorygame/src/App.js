@@ -8,10 +8,33 @@ const getShuffledArray = createNumber.sort(() => Math.random() - 0.5);
 
 function App() {
   const [counter, setCounter] = useState(8);
+  const [turns, setTurns] = useState(0);
+  const [choiceOne, setChoiceOne] = useState(null);
+  const [choiceTwo, setChoiceTwo] = useState(null);
 
   useEffect(() => {
     counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
   }, [counter]);
+
+  const handleChoice = (value) => {
+    choiceOne ? setChoiceTwo(value) : setChoiceOne(value);
+  };
+  useEffect(() => {
+    if (choiceOne && choiceTwo) {
+      if (choiceOne === choiceTwo) {
+        console.log('those cards match');
+      } else {
+        console.log('those cards do not match');
+      }
+      resetTurn();
+    }
+  }, [choiceOne, choiceTwo]);
+
+  const resetTurn = () => {
+    setChoiceOne(null);
+    setChoiceTwo(null);
+    setTurns((prevTurns) => prevTurns + 1);
+  };
 
   return (
     <div className="wrapper">
@@ -26,7 +49,7 @@ function App() {
       </div>
       <div className="game__cardList">
         {getShuffledArray.map((value) => (
-          <Card props={value} />
+          <Card props={value} handleChoice={handleChoice} />
         ))}
       </div>
     </div>
